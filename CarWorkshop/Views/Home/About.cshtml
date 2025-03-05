@@ -1,0 +1,7 @@
+﻿@model List<Details>
+
+@{
+    foreach(var Movie in Model){
+        <p>@Movie.Title @Movie.Description @foreach(var tag in Movie.Tags){@tag}</p>
+    }
+}
